@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:gray;
+    margin: 0;
+}
+.icones{
+    display:flex;
+    padding:10px;
+    gap:10px;
+}
+.icones img{
+    width:50px;
+    height:50px;
+}
+
+header {
+    background-color: #021dae;
+    color: white;
+    padding:20px;
+    display:flex;
+    border-bottom:solid 10px yellow;
+    
+}
+header .me{
+    margin-left:20px;
+    width:800px;
+    margin-right:110px;
+    margin-top:20px;
+    
+}
+header h1{
+    text-decoration:underline yellow 3px;
+    margin-top:5%;
+    margin-left:25%;
+    font-size:40px;
+}
+header h2{
+    background-color:white;
+    color:gray;
+    text-align:left;
+    width:800px;
+    padding:5px;
+    
+}
+header .busca{
+    display:flex;
+    justify-content:left;
+    gap:15px;
+}
+header .busca img{
+    width:32px;
+    height:32px;
+}
+.logo {
+    height: 28vh;
+    width: 18%;
+    border:solid 5px cyan;
+    border-radius:50px;
+}
+.abas{
+    display:flex;
+    justify-content: space-around;
+    background-color:#333;
+    padding:10px;
+}
+.abas h1{
+    background-color:yellow;
+    border:black solid 3px;
+    border-radius:20px;
+    padding:10px;
+    
+}
+.promocoes{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.promocoes .etiqueta{
+    border-radius:50px;
+    background-color:#021dae;
+    padding:10px;
+}
+.promocoes .seta{
+    width:100px;
+    height:64px;
+    margin-top:20px;
+    margin:10px;
+
+}
+.promocoes h1{
+    padding:5px;
+    background-color:yellow;
+    text-decoration:underline black 4px;
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:10px;
+}
+.promocoes .confira{
+    text-align:center;
+    margin:10px;
+    padding:5px;
+    font-size:32px;
+    margin-top:50px;
+    margin-right:200px;
+}
+.iconepromo{
+    display:flex;
+    margin-top:50px;
+}
+.conteudo{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.conteudo article{
+    background-color:lightgray;
+    width:400px;
+    margin:20px;
+    border-radius:50px;
+    display:grid;
+    place-items:center;
+    gap:10px;
+    border:black solid 4px;
+}
+.conteudo article h3{
+    text-decoration:line-through black 2px;
+}
+.conteudo article h1{
+    text-decoration:underline yellow 4px;
+}
+hr{
+    width:90%;
+    height:5px;
+    background-color:yellow;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.categorias .flex{
+    display:flex;
+    justify-content:space-between;
+}
+.categorias .nome{
+    text-decoration:underline black 4px;
+    text-align:center;
+    max-width:100%;
+    margin:auto 40%;
+    margin-bottom:50px;
+    font-size:32px;
+}
+.categorias .nome h1{
+    border-radius:20px;
+    background-color: yellow;
+    font-size: 60px;
+    width: 350px;
+    height: 80px;
+    align-items: center;
+    margin:2px -80px;
+}
+.categorias hr{
+    width:100%;
+}
+.categorias .coluna h1{
+    text-decoration:underline black 2px;
+    margin:20px 150px;
+    font-size:32px;
+}
+.esporte{
+    margin:auto 50px;
+}
+.esporte h1{
+    font-size:40px;
+    background-color:#f4f4f4;
+    border:black solid 2px;
+    padding:10px;
+    width:380px;
+}
+.esporte p{
+    font-size:30px;
+    margin:50px 0;
+}
+
+.saude{
+    margin:auto 50px;
+}
+.saude h1{
+    font-size:40px;
+    background-color:#f4f4f4;
+    border:black solid 2px;
+    padding:10px;
+    width:380px;}
+.saude p{
+    font-size:30px;
+    margin:50px 0;
+}
+footer{
+    background-color:#021dae;
+    border-top:yellow 10px solid;
+    display:flex;
+    justify-content:space-around;
+}
+footer h1{
+    color:yellow;
+    text-align:center;
+    margin:40px;
+}
+footer li{
+    color:white;
+    margin:20px;
+    font-weight:bold;
+}
+.baixar{
+    background-color:#021dae;
+    display:flex;
+    justify-content:right;
+    padding:40px;
+}
+.footer2{
+    padding:20px;
+    border:none;
+}
+.footer2 .logo{
+    border:yellow solid 5px;
+}
+.footer2 p{
+    margin-top:140px;
+    color:white;
+    font-weight:bold;
+}
+.footer2 .icones{
+    height:64px;
+    margin-top:100px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo{
+        width: 300px;
+        height: 250px;
+    }
+    
+    header .me {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    
+    
+    header h1 {
+        font-size: 28px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    header h2 {
+        width: 90%;
+    }
+    
+    .icones {
+        justify-content: center;
+    }
+    
+    .abas {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .promocoes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .promocoes .confira {
+        margin-right: 0;
+    }
+    
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .conteudo article {
+        width: 90%;
+    }
+    
+    .categorias .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .categorias .coluna h1 {
+        margin: 10px 0;
+    }
+    
+    .esporte, .saude {
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .esporte h1, .saude h1 {
+        width: auto;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .baixar {
+        justify-content: center;
+    }
+    
+    .footer2 {
+        text-align: center;
+    }
+    
+    .footer2 .icones {
+        margin-top: 20px;
+    }
+
+    .footer2 .logo{
+        width: 300px;
+        height: 250px;
+    }
+}
